@@ -11,11 +11,11 @@ const SelectUserDetails = styled.select`
   color: ${colors.navFontColor};
 `;
 
-const UserDetails = () => {
+const UserDetails = ({ userName }) => {
   return (
     <UserDetailsContainer>
       <SelectUserDetails>
-        <option>Olivia Wilde</option>
+        <option>{userName}</option>
       </SelectUserDetails>
     </UserDetailsContainer>
   );
