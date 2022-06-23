@@ -1,10 +1,9 @@
 import styled from "styled-components";
 
 const Wrapper = styled.div`
-  /* padding: 0 20px; */
   background-color: red;
   margin: 0 auto;
-  width: 978px;
+  max-width: 978px;
   padding: 0 23px;
 `;
 

@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <NavBar />
       <PageWrapper>
-        <div style={{ height: "100vh" }}>conte</div>
+       
       </PageWrapper>
     </div>
   );
