@@ -4,6 +4,7 @@ import ProgressLine from "./components/ProgressLine";
 
 const ProgressBarContainer = styled.div`
   margin: 0;
+  width: 230px;
 `;
 
 const ProgressTitle = styled.p`
@@ -13,11 +14,11 @@ const ProgressTitle = styled.p`
   margin-left: 5px;
 `;
 
-const ProgresBar = () => {
+const ProgresBar = ({ weeks }) => {
   return (
     <ProgressBarContainer>
       <ProgressTitle>Your 12 weeks progress</ProgressTitle>
-      <ProgressLine />
+      <ProgressLine weeks={weeks} />
     </ProgressBarContainer>
   );
 };

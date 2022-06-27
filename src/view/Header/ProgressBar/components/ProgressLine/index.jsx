@@ -14,7 +14,7 @@ import { colors } from "../../../../../common/styles";
 const ColorlibConnector = styled(StepConnector)(() => ({
   [`&.${stepConnectorClasses.alternativeLabel}`]: {
     top: 4,
-    left: -15,
+    left: -13,
   },
   [`&.${stepConnectorClasses.active}`]: {
     [`& .${stepConnectorClasses.line}`]: {
@@ -28,7 +28,7 @@ const ColorlibConnector = styled(StepConnector)(() => ({
   },
   [`& .${stepConnectorClasses.line}`]: {
     height: 2,
-    width: 30,
+    width: 20,
     border: 0,
     backgroundColor: colors.progressActive,
     borderRadius: 1,
@@ -45,7 +45,7 @@ const ColorlibStepIconRoot = styled("div")(({ theme, ownerState }) => ({
   justifyContent: "center",
   alignItems: "center",
   ...(ownerState.active && {
-    backgroundColor: "#fff",
+    backgroundColor: colors.primaryBackground,
     border: `2px solid ${colors.progressActive}`,
   }),
   ...(ownerState.completed && {
@@ -81,17 +81,17 @@ ColorlibStepIcon.propTypes = {
   icon: PropTypes.node,
 };
 
-const steps = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"];
+// const steps = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"];
 
-const ProgressLine = () => {
+const ProgressLine = ({ weeks }) => {
   return (
     <Stack sx={{ width: "230px", margin: "14px 0" }} spacing={4}>
       <Stepper
         alternativeLabel
-        activeStep={6}
+        activeStep={4}
         connector={<ColorlibConnector />}>
-        {steps.map(label => (
-          <Step key={label}>
+        {weeks.map(label => (
+          <Step sx={{ padding: "0px" }} key={label}>
             <StepLabel StepIconComponent={ColorlibStepIcon}>{label}</StepLabel>
           </Step>
         ))}

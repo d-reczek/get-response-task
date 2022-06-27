@@ -3,7 +3,7 @@ import { colors } from "../../common/styles";
 import { boxShadow } from "../../common/styles";
 import UserView from "./UserView";
 const NavigationWrapper = styled.div`
-  background-color: #fff;
+  background-color: ${colors.primaryBackground};
   box-shadow: ${boxShadow.mainBoxShadow};
 `;
 const Navigation = styled.nav`
@@ -22,7 +22,7 @@ const NavigationList = styled.ul`
   align-items: center;
   flex-wrap: wrap;
   gap: 30px;
-  border-left: 2px solid #efefef;
+  border-left: 2px solid ${colors.navBorderColor};
   margin-left: 120px;
   padding-left: 30px;
 `;
@@ -34,9 +34,9 @@ const NavigationListElementUserView = styled.li`
 const NavigationListLink = styled.a`
   text-decoration: none;
   text-transform: uppercase;
-  color: ${colors.navFontColor};
+  color: ${colors.primaryColor};
   :hover {
-    color: ${colors.navBtnHover};
+    color: ${colors.secondaryColor};
     border-bottom: 1px solid;
   }
 `;
@@ -51,7 +51,7 @@ const NavBar = () => {
       <Navigation>
         <NavigationList>
           {navigationLinks.map(link => (
-            <NavigationListElement>
+            <NavigationListElement key={link.name}>
               <NavigationListLink href={link.path}>
                 {link.name}
               </NavigationListLink>
