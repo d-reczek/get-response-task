@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import { boxShadow } from "../../../../common/styles";
+import { boxShadow } from "../../../../../common/styles";
+boxShadow;
 const AvatarContainer = styled.div``;
 const Img = styled.img`
   width: 40px;
@@ -7,7 +8,7 @@ const Img = styled.img`
   border-radius: 40px;
   box-shadow: ${boxShadow.mainBoxShadow};
 `;
-const Avatar = ({avatarImg}) => {
+const Avatar = ({ avatarImg }) => {
   return (
     <AvatarContainer>
       <Img src={avatarImg} alt="avatar"></Img>

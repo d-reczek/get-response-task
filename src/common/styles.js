@@ -1,6 +1,8 @@
 export const colors = {
   navFontColor: "#7c7c7c",
   navBtnHover: "#ff801a",
+  progressActive: "#dbdbdb",
+  progressCompleted: "#adbb0c",
 };
 
 export const sizes = {};

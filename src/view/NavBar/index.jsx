@@ -1,11 +1,10 @@
 import styled from "styled-components";
 import { colors } from "../../common/styles";
-import UserView from "../UserView";
 import { boxShadow } from "../../common/styles";
+import UserView from "./UserView";
 const NavigationWrapper = styled.div`
   background-color: #fff;
   box-shadow: ${boxShadow.mainBoxShadow};
-  /* padding-left: 120px; */
 `;
 const Navigation = styled.nav`
   max-width: 978px;

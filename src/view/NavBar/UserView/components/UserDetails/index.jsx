@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors } from "../../../../common/styles";
+import { colors } from "../../../../../common/styles";
 const UserDetailsContainer = styled.div`
   align-self: flex-start;
   margin-top: 10px;
