@@ -7,6 +7,7 @@ const HeaderContainer = styled.header`
   margin-top: 32px;
   margin-bottom: 33px;
   display: flex;
+  justify-content: space-between;
 `;
 const weeks = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"];
 const Header = () => {

@@ -6,8 +6,7 @@ const WeekContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  /* width: 297px; */
-  margin-left: 135px;
+  /* margin-left: 135px; */
 `;
 const WeekTitle = styled.p`
   color: ${colors.secondaryColor};

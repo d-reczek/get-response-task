@@ -11,7 +11,7 @@ const images = [img1, img2, img3, img4, img5];
 const ProteinsOptionsContainer = styled.div`
   display: flex;
   flex-direction: column;
-  margin-left: auto;
+  /* margin-left: auto; */
 `;
 const ProteinsOptionsTitle = styled.p`
   width: 100%;

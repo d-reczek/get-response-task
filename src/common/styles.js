@@ -7,6 +7,7 @@ export const colors = {
   progressCompleted: "#adbb0c",
   navBorderColor: "#efefef",
   mainBorderColor: "#dbdbdb",
+  footerBackground: "#f9f9f9",
 };
 
 export const sizes = {
