@@ -1,24 +1,40 @@
 import styled from "styled-components";
 import LargeBlock from "./components/LargeBlock";
 import SmallBlock from "./components/SmallBlock";
+import WorkoutBlock from "./components/WorkoutBlock";
 
 const TimeBlocksContainer = styled.div`
   width: 85px;
   /* margin-top: 41px; */
 `;
 const TimeBlocks = () => {
-  const blokPosition = {
+  const blockStyles = {
     top: "flex-start",
     bottom: "flex-end",
+    borderRadiusTop: "10px 0 0 0 ",
+    heightLarge: "144px",
+    heightSmall: "129px",
   };
 
   return (
     <TimeBlocksContainer>
-      <LargeBlock position={blokPosition.bottom} time="6:00" timeTag="AM" />
+      <LargeBlock
+        height={blockStyles.heightLarge}
+        borderRadius={blockStyles.borderRadiusTop}
+        position={blockStyles.bottom}
+        time="6:00"
+        timeTag="AM"
+      />
       <SmallBlock time="9:00" timeTag="AM" />
       <SmallBlock time="12:00" timeTag="PM" />
       <SmallBlock time="3:00" timeTag="PM" />
-      <LargeBlock position={blokPosition.bottom} time="6:00" timeTag="PM" />
+      <LargeBlock
+        height={blockStyles.heightSmall}
+        position={blockStyles.bottom}
+        time="6:00"
+        timeTag="PM"
+      />
+      <WorkoutBlock />
     </TimeBlocksContainer>
   );
 };

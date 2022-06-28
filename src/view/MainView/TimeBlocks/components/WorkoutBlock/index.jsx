@@ -1,3 +1,4 @@
+import { Icon } from "@mui/material";
 import styled from "styled-components";
 import { sizes, colors } from "../../../../../common/styles";
 
@@ -5,29 +6,27 @@ const SmallBlockContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 92px;
+  height: 41px;
   background-color: ${colors.thirdColor};
-  border-bottom: 2px solid ${colors.mainBorderColor};
+  border-radius: 0 0 0 10px;
 `;
 const TextContainer = styled.div`
   display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 40px 0;
   font-size: ${sizes.smallFontSize};
 `;
-const Span = styled.span`
-  font-weight: bold;
-`;
 
-const SmallBlock = ({ time, timeTag, position }) => {
+const WorkoutBlock = ({ position }) => {
   return (
     <SmallBlockContainer position={position}>
       <TextContainer>
-        <p>
-          <Span>{time}</Span> {timeTag}
-        </p>
+        Workout
+        <Icon sx={{ fontSize: "10px" }}>arrow_right</Icon>
       </TextContainer>
     </SmallBlockContainer>
   );
 };
 
-export default SmallBlock;
+export default WorkoutBlock;

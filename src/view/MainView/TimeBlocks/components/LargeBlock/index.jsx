@@ -4,9 +4,10 @@ const LargeBlockContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: ${props => props.position};
-  height: 143px;
+  height: ${props => props.height};
   background-color: ${colors.thirdColor};
   border-bottom: 2px solid ${colors.mainBorderColor};
+  border-radius: ${props => props.borderRadius};
 `;
 const TextContainer = styled.div`
   display: flex;
@@ -17,9 +18,12 @@ const Span = styled.span`
   font-weight: bold;
 `;
 
-const LargeBlock = ({ time, timeTag, position }) => {
+const LargeBlock = ({ time, timeTag, position, borderRadius, height }) => {
   return (
-    <LargeBlockContainer position={position}>
+    <LargeBlockContainer
+      height={height}
+      borderRadius={borderRadius}
+      position={position}>
       <TextContainer>
         <p>
           <Span>{time}</Span> {timeTag}
