@@ -8,7 +8,7 @@ const SmallBlockContainer = styled.div`
   align-items: center;
   height: 41px;
   background-color: ${colors.thirdColor};
-  border-radius: 0 0 0 10px;
+  border-radius: 0 0 0 ${sizes.primaryBorderRadius};
 `;
 const TextContainer = styled.div`
   display: flex;

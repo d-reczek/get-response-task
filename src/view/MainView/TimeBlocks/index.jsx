@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { sizes } from "../../../common/styles";
 import LargeBlock from "./components/LargeBlock";
 import SmallBlock from "./components/SmallBlock";
 import WorkoutBlock from "./components/WorkoutBlock";
@@ -11,7 +12,7 @@ const TimeBlocks = () => {
   const blockStyles = {
     top: "flex-start",
     bottom: "flex-end",
-    borderRadiusTop: "10px 0 0 0 ",
+    borderRadiusTop: `${sizes.primaryBorderRadius} 0 0 0 `,
     heightLarge: "144px",
     heightSmall: "129px",
   };

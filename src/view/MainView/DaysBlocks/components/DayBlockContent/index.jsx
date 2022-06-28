@@ -7,6 +7,7 @@ const DayBlockContentContainer = styled.div`
   height: 92px;
   background-color: ${colors.primaryBackground};
   border-bottom: ${props => props.border};
+  border-right: ${props => props.border};
 `;
 
 const Title = styled.p`

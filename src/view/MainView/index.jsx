@@ -1,11 +1,11 @@
 import styled from "styled-components";
+import DaysBlockFree from "./DayBlockFree";
 import DaysBlocks from "./DaysBlocks";
 import TimeBlocks from "./TimeBlocks";
 
 const MainViewContainer = styled.main`
   display: flex;
-  width: 791px;
-  height: 193px;
+  margin-bottom: 8px;
 `;
 const MainView = () => {
   return (
@@ -17,7 +17,7 @@ const MainView = () => {
       <DaysBlocks />
       <DaysBlocks />
       <DaysBlocks />
-      <DaysBlocks />
+      <DaysBlockFree />
     </MainViewContainer>
   );
 };

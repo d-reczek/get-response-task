@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import { colors } from "../../../common/styles";
+import DayBlockTitle from "../components/DayBlockTitle";
 import CarbonBlockContent from "./components/CarbonBlockContent";
 import DayBlockContent from "./components/DayBlockContent";
-import DayBlockTitle from "./components/DayBlockTitle";
 import WorkoutBlockContent from "./components/WorkoutBlockContent";
 const DaysBlocksContainer = styled.div`
   width: 128px;
@@ -10,7 +10,7 @@ const DaysBlocksContainer = styled.div`
 
 const DaysBlocks = () => {
   const border = {
-    border: `2px solid ${colors.dayBlockBorderColor}`,
+    border: `2px solid ${colors.mainBorderColor}`,
     noBorder: "none",
   };
 
@@ -21,7 +21,7 @@ const DaysBlocks = () => {
       <DayBlockContent border={border.border} />
       <DayBlockContent border={border.border} />
       <DayBlockContent border={border.border} />
-      <DayBlockContent border={border.noBorder} />
+      <DayBlockContent border={border.border} />
       <CarbonBlockContent />
       <WorkoutBlockContent />
     </DaysBlocksContainer>

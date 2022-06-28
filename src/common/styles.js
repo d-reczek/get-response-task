@@ -7,12 +7,12 @@ export const colors = {
   progressCompleted: "#adbb0c",
   navBorderColor: "#efefef",
   mainBorderColor: "#dbdbdb",
-  dayBlockBorderColor: "#e9e9e9",
 };
 
 export const sizes = {
   smallFontSize: "10px",
   mediumFontSize: "17px",
+  primaryBorderRadius: "10px",
 };
 export const boxShadow = {
   mainBoxShadow:

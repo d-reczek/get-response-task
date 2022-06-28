@@ -9,6 +9,7 @@ const WorkoutBlockContentContainer = styled.div`
   gap: 5px;
   height: 41px;
   background-color: ${colors.thirdColor};
+  border-right: 2px solid ${colors.mainBorderColor};
 `;
 
 const Img = styled.img``;
