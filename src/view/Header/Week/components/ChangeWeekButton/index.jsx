@@ -11,6 +11,7 @@ const ChangeWeekButton = ({ type, handleClick }) => {
         height: "42px",
         backgroundColor: colors.primaryBackground,
         textAlign: "center",
+        border: `1px solid ${colors.primaryColor}`,
       }}
       variant="text">
       <Icon

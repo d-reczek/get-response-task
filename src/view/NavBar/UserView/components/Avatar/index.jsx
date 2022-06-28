@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { boxShadow } from "../../../../../common/styles";
-boxShadow;
 const AvatarContainer = styled.div``;
 const Img = styled.img`
   width: 40px;

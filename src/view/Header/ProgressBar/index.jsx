@@ -1,15 +1,14 @@
 import styled from "styled-components";
-import { colors } from "../../../common/styles";
+import { colors, sizes } from "../../../common/styles";
 import ProgressLine from "./components/ProgressLine";
-
 const ProgressBarContainer = styled.div`
   margin: 0;
   width: 230px;
 `;
 
 const ProgressTitle = styled.p`
-  color: ${colors.progressActive};
-  font-size: 14px;
+  color: ${colors.primaryColor};
+  font-size:${sizes.smallFontSize};
   text-transform: uppercase;
   margin-left: 5px;
 `;

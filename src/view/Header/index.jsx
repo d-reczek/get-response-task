@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import ProgresBar from "./ProgressBar";
+import ProteinsOptions from "./ProteinsOptions";
 import Week from "./Week";
 
 const HeaderContainer = styled.header`
@@ -12,6 +13,7 @@ const Header = () => {
     <HeaderContainer>
       <ProgresBar weeks={weeks} />
       <Week />
+      <ProteinsOptions />
     </HeaderContainer>
   );
 };
