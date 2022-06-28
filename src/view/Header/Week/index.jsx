@@ -7,7 +7,7 @@ const WeekContainer = styled.div`
   justify-content: center;
   align-items: center;
   /* width: 297px; */
-  margin-left: 185px;
+  margin-left: 135px;
 `;
 const WeekTitle = styled.p`
   color: ${colors.secondaryColor};
@@ -19,7 +19,7 @@ const Week = () => {
   return (
     <WeekContainer>
       <ChangeWeekButton type={"back"} />
-      <WeekTitle>Week</WeekTitle>
+      <WeekTitle>Week 7</WeekTitle>
       <ChangeWeekButton type={"forward"} />
     </WeekContainer>
   );

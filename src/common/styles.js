@@ -2,9 +2,11 @@ export const colors = {
   primaryBackground: "#fff",
   primaryColor: "#7c7c7c",
   secondaryColor: "#ff801a",
+  thirdColor: "#eeeeee",
   progressActive: "#dbdbdb",
   progressCompleted: "#adbb0c",
   navBorderColor: "#efefef",
+  mainBorderColor: "#dbdbdb",
 };
 
 export const sizes = {

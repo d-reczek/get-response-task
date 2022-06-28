@@ -12,7 +12,6 @@ const ProteinsOptionsContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin-left: auto;
-
 `;
 const ProteinsOptionsTitle = styled.p`
   width: 100%;
@@ -24,8 +23,13 @@ const Image = styled.img`
   width: 25px;
   height: 25px;
   margin: 15px 7.5px;
-  /* filter: invert(1%) sepia(93%) saturate(1352%) hue-rotate(87deg)
-    brightness(119%) contrast(119%); */
+  cursor: pointer;
+  /* filter: invert(35%) sepia(38%) saturate(1958%) hue-rotate(327deg)
+    brightness(87%) contrast(86%); */
+  :hover {
+    filter: invert(56%) sepia(80%) saturate(1991%) hue-rotate(347deg)
+      brightness(101%) contrast(101%);
+  }
 `;
 const ImagesContainer = styled.div`
   display: flex;
