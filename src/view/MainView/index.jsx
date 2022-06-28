@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import TimeBlocks from "./components/TimeBlocks";
+import TimeBlocks from "./TimeBlocks";
 
 const MainViewContainer = styled.main`
   width: 791px;
@@ -8,7 +8,7 @@ const MainViewContainer = styled.main`
 const MainView = () => {
   return (
     <MainViewContainer>
-      <TimeBlocks  />
+      <TimeBlocks />
     </MainViewContainer>
   );
 };
