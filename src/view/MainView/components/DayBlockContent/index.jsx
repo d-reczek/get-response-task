@@ -1,7 +1,6 @@
 import styled from "styled-components";
-import { colors, sizes } from "../../../../../common/styles";
+import { colors, sizes } from "../../../../common/styles";
 import shakeImg from "./img/shake.png";
-
 const DayBlockContentContainer = styled.div`
   display: flex;
   height: 92px;

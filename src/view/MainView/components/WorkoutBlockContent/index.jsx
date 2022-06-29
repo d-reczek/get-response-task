@@ -1,6 +1,6 @@
 import { Icon } from "@mui/material";
 import styled from "styled-components";
-import { colors, sizes } from "../../../../../common/styles";
+import { colors, sizes } from "../../../../common/styles";
 import logo from "./img/workout.png";
 const WorkoutBlockContentContainer = styled.div`
   display: flex;

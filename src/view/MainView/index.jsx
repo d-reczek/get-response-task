@@ -4,9 +4,9 @@ import { colors, sizes } from "../../common/styles";
 import { WeekContex } from "../../components/WeekContext";
 import DayBlockTitle from "./components/DayBlockTitle";
 import DaysBlockFree from "./DayBlockFree";
-import DaysBlocks from "./DaysBlocks";
-import DayBlockContent from "./DaysBlocks/components/DayBlockContent";
+import DayBlockContent from "./components/DayBlockContent";
 import TimeBlocks from "./TimeBlocks";
+
 const MainViewContainer = styled.main`
   display: flex;
   margin-bottom: 8px;
@@ -39,81 +39,25 @@ const DaysBlockFreeContainer = styled.div`
 
 const MainView = () => {
   const { week } = useContext(WeekContex);
+  const monday = ["testa", "test2b", "test3c", "test4d", "test5e"];
+  const tuesday = ["test", "test2", "test3", "test4", "test5"];
+  const wednesday = ["test", "test2", "test3", "test4", "test5"];
+  const thursday = ["test", "test2", "test3", "test4", "test5"];
+  const friday = ["test", "test2", "test3", "test4", "test5"];
+  const saturday = ["test", "test2", "test3", "test4", "test5"];
   let daysArray = [];
   let freeDay;
   const generateDays = () => {
-    if (week === 1) {
-      for (let i = 1; i <= 7; i++) {
-        freeDay = daysArray.length;
-        daysArray.push(i);
-      }
-    } else {
-      let lastDay = week * 7;
-      let firstDay = lastDay - 6;
-      for (let i = firstDay; i <= lastDay; i++) {
-        freeDay = daysArray.length;
-        daysArray.push(i);
-      }
+    let lastDay = week * 7;
+    let firstDay = lastDay - 6;
+    for (let i = firstDay; i <= lastDay; i++) {
+      freeDay = daysArray.length;
+      daysArray.push(i);
     }
+    console.log("free", daysArray);
   };
 
   generateDays();
-
-  const testArray = [
-    {
-      id: 1,
-      six: "test",
-      neoun: "test2",
-      twelve: "test3",
-      three: "test4",
-      sixTwo: "test5",
-    },
-    {
-      id: 2,
-      six: "test",
-      neoun: "test2",
-      twelve: "test3",
-      three: "test4",
-      sixTwo: "test5",
-    },
-    {
-      id: 3,
-      six: "test",
-      neoun: "test2",
-      twelve: "test3",
-      three: "test4",
-      sixTwo: "test5",
-    },
-    {
-      id: 4,
-      six: "test",
-      neoun: "test2",
-      twelve: "test3",
-      three: "test4",
-      sixTwo: "test5",
-    },
-    {
-      id: 5,
-      six: "test",
-      neoun: "test2",
-      twelve: "test3",
-      three: "test4",
-      sixTwo: "test5",
-    },
-    {
-      id: 6,
-      six: "test",
-      neoun: "test2",
-      twelve: "test3",
-      three: "test4",
-      sixTwo: "test5",
-    },
-  ];
-  const border = {
-    border: `2px solid ${colors.mainBorderColor}`,
-  };
-
-  const weekDays = [{}];
 
   return (
     <MainViewContainer>
@@ -123,19 +67,37 @@ const MainView = () => {
           day !== daysArray[freeDay] && (
             <DaysBlocksContainer key={day}>
               <DayBlockTitle day={day} />
-              <DayBlockContent background={true} title="Bod &#183;e shake" />
-              <DayBlockContent title="Bod &#183;e shake" />
-              <DayBlockContent title="Bod &#183;e shake" />
-              <DayBlockContent title="Bod &#183;e shake" />
-              <DayBlockContent title="Bod &#183;e shake" />
+
+              {day === daysArray[0] &&
+                monday.map(item => <DayBlockContent key={item} title={item} />)}
+              {day === daysArray[1] &&
+                tuesday.map(item => (
+                  <DayBlockContent key={item} title={item} />
+                ))}
+              {day === daysArray[2] &&
+                wednesday.map(item => (
+                  <DayBlockContent key={item} title={item} />
+                ))}
+              {day === daysArray[3] &&
+                thursday.map(item => (
+                  <DayBlockContent key={item} title={item} />
+                ))}
+              {day === daysArray[4] &&
+                friday.map(item => <DayBlockContent key={item} title={item} />)}
+              {day === daysArray[5] &&
+                saturday.map(item => (
+                  <DayBlockContent key={item} title={item} />
+                ))}
             </DaysBlocksContainer>
           )
       )}
+
       <DaysBlockFreeContainer>
         <DayBlockTitle
           borderRadius={`0 ${sizes.primaryBorderRadius} 0 0`}
           day={daysArray[freeDay]}
         />
+
         <DaysBlockFree />
       </DaysBlockFreeContainer>
     </MainViewContainer>
