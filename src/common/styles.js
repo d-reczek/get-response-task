@@ -14,6 +14,7 @@ export const colors = {
 export const sizes = {
   smallFontSize: "10px",
   mediumFontSize: "17px",
+  largeFontSize: "22px",
   primaryBorderRadius: "10px",
 };
 export const boxShadow = {
