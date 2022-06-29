@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors, sizes } from "../../../common/styles";
+import { colors, sizes } from "../../../../common/styles";
 const CarbonBlockContentContainer = styled.div`
   display: flex;
   justify-content: center;

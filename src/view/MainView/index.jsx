@@ -6,7 +6,8 @@ import DayBlockTitle from "./components/DayBlockTitle";
 import DaysBlockFree from "./DayBlockFree";
 import DayBlockContent from "./components/DayBlockContent";
 import TimeBlocks from "./TimeBlocks";
-
+import CarbonBlockContent from "./components/CarbonBlockContent";
+import WorkoutBlockContent from "./../MainView/components/WorkoutBlockContent";
 const MainViewContainer = styled.main`
   display: flex;
   margin-bottom: 8px;
@@ -88,6 +89,8 @@ const MainView = () => {
                 saturday.map(item => (
                   <DayBlockContent key={item} title={item} />
                 ))}
+              <CarbonBlockContent />
+              <WorkoutBlockContent />
             </DaysBlocksContainer>
           )
       )}
