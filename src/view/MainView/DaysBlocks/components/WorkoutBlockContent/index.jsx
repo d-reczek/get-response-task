@@ -17,7 +17,9 @@ const WorkoutBlockContent = () => {
   return (
     <WorkoutBlockContentContainer>
       <Img src={logo} />
-      <Icon sx={{ fontSize: sizes.smallFontSize }}>check</Icon>
+      <Icon sx={{ fontSize: sizes.smallFontSize, marginRight: "-10px" }}>
+        check
+      </Icon>
     </WorkoutBlockContentContainer>
   );
 };

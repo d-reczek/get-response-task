@@ -12,7 +12,6 @@ const DayBlockFreeContentContainer = styled.div`
 
 const TitleConatiner = styled.div`
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 40px;
   color: ${colors.primaryColor};
@@ -21,6 +20,7 @@ const TitleConatiner = styled.div`
   transform: rotate(-90deg);
 `;
 const Title = styled.p`
+ padding-bottom: 3px;
   width: 200px;
 `;
 const DayBlockFreeContent = () => {
