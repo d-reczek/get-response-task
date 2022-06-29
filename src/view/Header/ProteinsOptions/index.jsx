@@ -12,7 +12,6 @@ const images = [img1, img2, img3, img4, img5];
 const ProteinsOptionsContainer = styled.div`
   display: flex;
   flex-direction: column;
-  /* margin-left: auto; */
 `;
 const ProteinsOptionsTitle = styled.p`
   width: 100%;
@@ -28,7 +27,6 @@ const Image = styled.img`
   height: 25px;
   margin: 15px 7.5px;
   cursor: pointer;
-
   :hover {
     filter: invert(56%) sepia(80%) saturate(1991%) hue-rotate(347deg)
       brightness(101%) contrast(101%);

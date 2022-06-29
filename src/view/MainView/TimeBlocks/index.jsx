@@ -6,7 +6,6 @@ import WorkoutBlock from "./components/WorkoutBlock";
 
 const TimeBlocksContainer = styled.div`
   width: 85px;
-  /* margin-top: 41px; */
 `;
 const TimeBlocks = () => {
   const blockStyles = {

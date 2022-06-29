@@ -6,6 +6,7 @@ const Button = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100px;
   background-color: ${colors.primaryBackground};
   border: 1px solid ${colors.primaryColor};
   border-radius: 5px;

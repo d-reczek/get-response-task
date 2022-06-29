@@ -83,12 +83,11 @@ ColorlibStepIcon.propTypes = {
   icon: PropTypes.node,
 };
 
-// const steps = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"];
 
 const ProgressLine = ({ weeks }) => {
   const { week } = useContext(WeekContex);
   return (
-    <Stack sx={{ width: "230px", margin: "14px 0" }} spacing={4}>
+    <Stack sx={{ width: "230px", margin: "14px 0" }} >
       <Stepper
         alternativeLabel
         activeStep={week - 1}

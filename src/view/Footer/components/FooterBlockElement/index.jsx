@@ -2,7 +2,9 @@ import styled from "styled-components";
 import { device } from "../../../../common/deviceBreakPoints";
 import { colors } from "../../../../common/styles";
 const FooterBlockElementContainer = styled.div`
-  /* height: 178px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin-top: 40px;
   border-right: ${props => props.borderRight};
   padding-left: ${props => props.paddingLeft};
@@ -10,8 +12,6 @@ const FooterBlockElementContainer = styled.div`
   padding-bottom: 15px;
   padding-right: ${props => props.paddingRight};
   @media ${device.tabletXL} {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 15px;

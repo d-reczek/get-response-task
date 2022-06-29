@@ -19,10 +19,10 @@ const Title = styled.p`
     text-align: center;
   }
 `;
-const CarbonBlockContent = () => {
+const CarbonBlockContent = ({ title }) => {
   return (
     <CarbonBlockContentContainer>
-      <Title>low-carbon</Title>
+      <Title>{title}</Title>
     </CarbonBlockContentContainer>
   );
 };

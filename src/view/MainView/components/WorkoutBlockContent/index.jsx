@@ -11,7 +11,6 @@ const WorkoutBlockContentContainer = styled.div`
   height: 41px;
   background-color: ${colors.thirdColor};
   cursor: pointer;
-  /* border-right: 2px solid ${colors.mainBorderColor}; */
 `;
 
 const Img = styled.img`
@@ -20,7 +19,7 @@ const Img = styled.img`
       brightness(103%) contrast(101%);
   }
   @media ${device.mobileS} {
-height: 7px;
+    height: 7px;
   }
 `;
 const WorkoutBlockContent = () => {

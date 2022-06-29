@@ -16,8 +16,6 @@ const DayBlockContentContainer = styled.div`
   background-repeat: no-repeat;
   background-position: bottom;
   font-weight: ${props => props.hover};
-
-  /* border-right: ${props => props.border}; */
 `;
 
 const Title = styled.p`

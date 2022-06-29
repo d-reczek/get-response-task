@@ -9,7 +9,6 @@ import TimeBlocks from "./TimeBlocks";
 import CarbonBlockContent from "./components/CarbonBlockContent";
 import WorkoutBlockContent from "./../MainView/components/WorkoutBlockContent";
 import { device } from "../../common/deviceBreakPoints";
-import { useMediaQuery } from "@mui/material";
 const MainViewContainer = styled.main`
   display: flex;
   margin-bottom: 8px;
@@ -29,6 +28,7 @@ const DaysBlocksContainer = styled.div`
     margin-left: -2px;
     margin-bottom: -2px;
   }
+
   @media ${device.tablet} {
     width: 90px;
     :hover {
@@ -50,7 +50,7 @@ const DaysBlocksContainer = styled.div`
   @media ${device.mobileS} {
     width: 30px;
     :hover {
-      width: 22px;
+      width: 32px;
     }
   }
 `;
@@ -65,6 +65,7 @@ const DaysBlockFreeContainer = styled.div`
     margin-left: -2px;
     margin-bottom: -2px;
   }
+
   @media ${device.tablet} {
     width: 90px;
     :hover {
@@ -135,25 +136,15 @@ const MainView = () => {
     "Bode Burn and Whole-Wheat English Muffin with Butter Spray",
     "Garlic Lime Chicken (HC)",
   ];
-  const tablet = useMediaQuery(`(max-width: ${device.tablet})`);
 
   let daysArray = [];
   let freeDay;
   const generateDays = () => {
-    if (tablet) {
-      let lastDay = week * 2;
-      let firstDay = lastDay - 3;
-      for (let i = firstDay; i <= lastDay; i++) {
-        freeDay = daysArray.length;
-        daysArray.push(i);
-      }
-    } else {
-      let lastDay = week * 7;
-      let firstDay = lastDay - 6;
-      for (let i = firstDay; i <= lastDay; i++) {
-        freeDay = daysArray.length;
-        daysArray.push(i);
-      }
+    let lastDay = week * 7;
+    let firstDay = lastDay - 6;
+    for (let i = firstDay; i <= lastDay; i++) {
+      freeDay = daysArray.length;
+      daysArray.push(i);
     }
   };
 
@@ -217,7 +208,14 @@ const MainView = () => {
                     title={item}
                   />
                 ))}
-              <CarbonBlockContent />
+
+              <CarbonBlockContent
+                title={
+                  day === 1 || day === 2 || day === 4 || day === 5
+                    ? "low-carbon"
+                    : "high-carbon"
+                }
+              />
               <WorkoutBlockContent />
             </DaysBlocksContainer>
           )
