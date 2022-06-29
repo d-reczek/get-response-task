@@ -5,6 +5,7 @@ import { WeekContex } from "../../components/WeekContext";
 import DayBlockTitle from "./components/DayBlockTitle";
 import DaysBlockFree from "./DayBlockFree";
 import DaysBlocks from "./DaysBlocks";
+import DayBlockContent from "./DaysBlocks/components/DayBlockContent";
 import TimeBlocks from "./TimeBlocks";
 const MainViewContainer = styled.main`
   display: flex;
@@ -57,6 +58,63 @@ const MainView = () => {
   };
 
   generateDays();
+
+  const testArray = [
+    {
+      id: 1,
+      six: "test",
+      neoun: "test2",
+      twelve: "test3",
+      three: "test4",
+      sixTwo: "test5",
+    },
+    {
+      id: 2,
+      six: "test",
+      neoun: "test2",
+      twelve: "test3",
+      three: "test4",
+      sixTwo: "test5",
+    },
+    {
+      id: 3,
+      six: "test",
+      neoun: "test2",
+      twelve: "test3",
+      three: "test4",
+      sixTwo: "test5",
+    },
+    {
+      id: 4,
+      six: "test",
+      neoun: "test2",
+      twelve: "test3",
+      three: "test4",
+      sixTwo: "test5",
+    },
+    {
+      id: 5,
+      six: "test",
+      neoun: "test2",
+      twelve: "test3",
+      three: "test4",
+      sixTwo: "test5",
+    },
+    {
+      id: 6,
+      six: "test",
+      neoun: "test2",
+      twelve: "test3",
+      three: "test4",
+      sixTwo: "test5",
+    },
+  ];
+  const border = {
+    border: `2px solid ${colors.mainBorderColor}`,
+  };
+
+  const weekDays = [{}];
+
   return (
     <MainViewContainer>
       <TimeBlocks />
@@ -65,7 +123,11 @@ const MainView = () => {
           day !== daysArray[freeDay] && (
             <DaysBlocksContainer key={day}>
               <DayBlockTitle day={day} />
-              <DaysBlocks />
+              <DayBlockContent background={true} title="Bod &#183;e shake" />
+              <DayBlockContent title="Bod &#183;e shake" />
+              <DayBlockContent title="Bod &#183;e shake" />
+              <DayBlockContent title="Bod &#183;e shake" />
+              <DayBlockContent title="Bod &#183;e shake" />
             </DaysBlocksContainer>
           )
       )}

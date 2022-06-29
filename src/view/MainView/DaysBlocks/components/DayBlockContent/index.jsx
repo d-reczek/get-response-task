@@ -1,25 +1,30 @@
 import styled from "styled-components";
-import { colors } from "../../../../../common/styles";
+import { colors, sizes } from "../../../../../common/styles";
+import shakeImg from "./img/shake.png";
+
 const DayBlockContentContainer = styled.div`
   display: flex;
-  justify-content: center;
-  align-items: center;
   height: 92px;
   background-color: ${colors.primaryBackground};
-  border-bottom: ${props => props.border};
-  /* border-right: ${props => props.border}; */
+  border-bottom: 2px solid ${colors.mainBorderColor};
+  background-image: ${props =>
+    props.background ? `url(${shakeImg})` : "none"};
+  background-size: contain;
+  background-repeat: no-repeat;
 
+  /* border-right: ${props => props.border}; */
 `;
 
 const Title = styled.p`
-  color: ${colors.secondaryColor};
-  text-transform: uppercase;
+  color: ${colors.primaryColor};
+  font-size: ${sizes.smallFontSize};
+  margin: 14px;
 `;
 
-const DayBlockContent = ({ border }) => {
+const DayBlockContent = ({ background, title }) => {
   return (
-    <DayBlockContentContainer border={border}>
-      <Title>Test</Title>
+    <DayBlockContentContainer background={background}>
+      <Title>{title}</Title>
     </DayBlockContentContainer>
   );
 };

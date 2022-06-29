@@ -4,17 +4,13 @@ import DayBlockContent from "./components/DayBlockContent";
 import WorkoutBlockContent from "./components/WorkoutBlockContent";
 
 const DaysBlocks = () => {
-  const border = {
-    border: `2px solid ${colors.mainBorderColor}`,
-  };
-
   return (
     <>
-      <DayBlockContent border={border.border} />
-      <DayBlockContent border={border.border} />
-      <DayBlockContent border={border.border} />
-      <DayBlockContent border={border.border} />
-      <DayBlockContent border={border.border} />
+      <DayBlockContent title="Bod &#183;e shake" />
+      <DayBlockContent />
+      <DayBlockContent />
+      <DayBlockContent />
+      <DayBlockContent />
       <CarbonBlockContent />
       <WorkoutBlockContent />
     </>
