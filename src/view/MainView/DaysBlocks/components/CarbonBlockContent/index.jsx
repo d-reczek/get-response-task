@@ -7,7 +7,7 @@ const CarbonBlockContentContainer = styled.div`
   height: 37px;
   background-color: ${colors.thirdColor};
   border-bottom: 2px solid ${colors.mainBorderColor};
-  border-right: 2px solid ${colors.mainBorderColor};
+  /* border-right: 2px solid ${colors.mainBorderColor}; */
 
 `;
 

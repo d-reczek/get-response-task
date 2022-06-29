@@ -3,6 +3,7 @@ export const colors = {
   primaryColor: "#7c7c7c",
   secondaryColor: "#ff801a",
   thirdColor: "#eeeeee",
+  fourColor: "#adbb0c",
   progressActive: "#dbdbdb",
   progressCompleted: "#adbb0c",
   navBorderColor: "#efefef",

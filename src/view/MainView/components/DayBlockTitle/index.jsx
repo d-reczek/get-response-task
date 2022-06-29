@@ -7,15 +7,16 @@ const DayBlockContainer = styled.div`
   height: 52px;
   background-color: ${colors.primaryBackground};
   border-bottom: 2px solid ${colors.mainBorderColor};
-  border-right: 2px solid ${colors.mainBorderColor};
+  /* border-right: 2px solid ${colors.mainBorderColor}; */
   border-radius: ${props => props.borderRadius};
   border-right: ${props => props.noBorder};
 `;
 
 const Title = styled.p`
-  color: ${colors.secondaryColor};
+  color: ${colors.fourColor};
   text-transform: uppercase;
   font-size: ${sizes.mediumFontSize};
+  font-weight: bold;
 `;
 
 const DayBlockTitle = ({ borderRadius, noBorder }) => {

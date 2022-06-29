@@ -6,6 +6,13 @@ import DayBlockContent from "./components/DayBlockContent";
 import WorkoutBlockContent from "./components/WorkoutBlockContent";
 const DaysBlocksContainer = styled.div`
   width: 128px;
+  border-right: 2px solid ${colors.mainBorderColor};
+  :hover {
+    border: 2px solid ${colors.secondaryColor};
+    margin-top: -2px;
+    margin-left: -2px;
+    margin-bottom: -2px;
+  }
 `;
 
 const DaysBlocks = () => {
