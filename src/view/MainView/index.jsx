@@ -13,7 +13,7 @@ import { useMediaQuery } from "@mui/material";
 const MainViewContainer = styled.main`
   display: flex;
   margin-bottom: 8px;
-  @media ${device.tablet} {
+  @media ${device.tabletXL} {
     justify-content: center;
     align-items: center; */
   }
@@ -32,11 +32,19 @@ const DaysBlocksContainer = styled.div`
   @media ${device.tablet} {
     width: 90px;
     :hover {
-      width: 32px;
-      border: 2px solid ${colors.secondaryColor};
-      margin-top: -2px;
-      margin-left: -2px;
-      margin-bottom: -2px;
+      width: 92px;
+    }
+  }
+  @media ${device.tabletXL} {
+    width: 80px;
+    :hover {
+      width: 82px;
+    }
+  }
+  @media ${device.mobile} {
+    width: 50px;
+    :hover {
+      width: 52px;
     }
   }
 `;
@@ -54,11 +62,19 @@ const DaysBlockFreeContainer = styled.div`
   @media ${device.tablet} {
     width: 90px;
     :hover {
-      width: 32px;
-      border: 2px solid ${colors.secondaryColor};
-      margin-top: -2px;
-      margin-left: -2px;
-      margin-bottom: -2px;
+      width: 92px;
+    }
+  }
+  @media ${device.tabletXL} {
+    width: 80px;
+    :hover {
+      width: 82px;
+    }
+  }
+  @media ${device.mobile} {
+    width: 50px;
+    :hover {
+      width: 52px;
     }
   }
 `;

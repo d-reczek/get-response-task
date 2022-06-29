@@ -6,19 +6,12 @@ import UserView from "./UserView";
 const NavigationWrapper = styled.div`
   background-color: ${colors.primaryBackground};
   box-shadow: ${boxShadow.mainBoxShadow};
-  @media ${device.mobile} {
-    background-color: inherit;
-    box-shadow: none;
-  }
 `;
 const Navigation = styled.nav`
   max-width: 978px;
   margin: 0 auto;
   padding: 0 23px;
   @media ${device.mobile} {
-    width: 100%;
-    background-color: ${colors.primaryBackground};
-    box-shadow: ${boxShadow.mainBoxShadow};
   }
 `;
 const NavigationList = styled.ul`
@@ -36,15 +29,29 @@ const NavigationList = styled.ul`
   padding-left: 30px;
   @media ${device.mobile} {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
     height: 130px;
     border: none;
     margin: 0;
   }
 `;
-const NavigationListElement = styled.li``;
+const NavigationListElement = styled.li`
+  @media ${device.mobile} {
+    border-bottom: 1px solid ${colors.primaryColor};
+    width: 25%;
+    text-align: center;
+    :hover {
+      border-bottom: 1px solid ${colors.secondaryColor};
+    }
+  }
+`;
 const NavigationListElementUserView = styled.li`
   margin-left: auto;
+  @media ${device.mobile} {
+    margin: 0;
+  }
 `;
 
 const NavigationListLink = styled.a`

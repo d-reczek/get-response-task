@@ -26,7 +26,7 @@ const WorkoutBlockContent = () => {
       <Icon
         sx={{
           fontSize: sizes.smallFontSize,
-          marginRight: "-10px",
+          marginRight: "-5px",
           ":hover": { color: colors.secondaryColor },
         }}>
         check

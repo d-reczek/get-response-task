@@ -8,7 +8,7 @@ const FooterContainer = styled.footer`
   display: flex;
   background-color: ${colors.footerBackground};
   margin-bottom: 4px;
-  @media ${device.tablet} {
+  @media ${device.tabletXL} {
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -19,7 +19,7 @@ const Heder = styled.h3`
   font-size: ${sizes.largeFontSize};
   font-weight: bold;
   padding-bottom: 20px;
-  @media ${device.tablet} {
+  @media ${device.tabletXL} {
     padding: 0;
   }
 `;
@@ -27,7 +27,7 @@ const Paragraph = styled.p`
   color: ${colors.primaryColor};
   font-size: ${sizes.smallFontSize};
   padding-bottom: 20px;
-  @media ${device.tablet} {
+  @media ${device.tabletXL} {
     padding: 0;
   }
 `;

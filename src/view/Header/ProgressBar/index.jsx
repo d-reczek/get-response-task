@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { device } from "../../../common/deviceBreakPoints";
 import { colors, sizes } from "../../../common/styles";
 import ProgressLine from "./components/ProgressLine";
 const ProgressBarContainer = styled.div`
@@ -11,13 +12,15 @@ const ProgressTitle = styled.p`
   font-size: ${sizes.smallFontSize};
   text-transform: uppercase;
   margin-left: 5px;
+  @media ${device.tabletXL} {
+    text-align: center;
+  }
 `;
-
-const ProgresBar = ({ weeks,  }) => {
+const ProgresBar = ({ weeks }) => {
   return (
     <ProgressBarContainer>
       <ProgressTitle>Your 12 weeks progress</ProgressTitle>
-      <ProgressLine  weeks={weeks} />
+      <ProgressLine weeks={weeks} />
     </ProgressBarContainer>
   );
 };

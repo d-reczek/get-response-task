@@ -9,7 +9,7 @@ const FooterBlockElementContainer = styled.div`
   padding-right: 80px;
   padding-bottom: 15px;
   padding-right: ${props => props.paddingRight};
-  @media ${device.tablet} {
+  @media ${device.tabletXL} {
     display: flex;
     flex-direction: column;
     justify-content: center;

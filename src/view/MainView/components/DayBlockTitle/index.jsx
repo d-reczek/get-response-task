@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { device } from "../../../../common/deviceBreakPoints";
 import { colors, sizes } from "../../../../common/styles";
 const DayBlockContainer = styled.div`
   display: flex;
@@ -15,8 +16,12 @@ const Title = styled.p`
   text-transform: uppercase;
   font-size: ${sizes.mediumFontSize};
   font-weight: bold;
+  @media ${device.mobile} {
+    width: 60px;
+    font-size: ${sizes.smallFontSize};
+    text-align: center;
+  }
 `;
-
 const DayBlockTitle = ({ borderRadius, day }) => {
   return (
     <DayBlockContainer borderRadius={borderRadius}>

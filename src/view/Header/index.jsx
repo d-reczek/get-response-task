@@ -8,7 +8,7 @@ const HeaderContainer = styled.header`
   margin-bottom: 33px;
   display: flex;
   justify-content: space-between;
-  @media ${device.tablet} {
+  @media ${device.tabletXL} {
     flex-direction: column;
     justify-content: center;
     align-items: center;

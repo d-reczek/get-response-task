@@ -16,8 +16,6 @@ const DayBlockContentContainer = styled.div`
   background-repeat: no-repeat;
   background-position: bottom;
   font-weight: ${props => props.hover};
-  @media ${device.tablet} {
-  }
 
   /* border-right: ${props => props.border}; */
 `;
@@ -25,10 +23,13 @@ const DayBlockContentContainer = styled.div`
 const Title = styled.p`
   color: ${colors.primaryColor};
   font-size: ${sizes.smallFontSize};
- 
+  margin: 14px 0 0 10px;
   @media ${device.tablet} {
     margin: 5px;
     font-size: 8px;
+  }
+  @media ${device.mobile} {
+    font-size: 7px;
   }
 `;
 const DayBlockContent = ({ background, title, check }) => {

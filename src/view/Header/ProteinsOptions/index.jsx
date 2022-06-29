@@ -19,7 +19,7 @@ const ProteinsOptionsTitle = styled.p`
   text-transform: uppercase;
   color: ${colors.primaryColor};
   font-size: ${sizes.smallFontSize};
-  @media ${device.tablet} {
+  @media ${device.tabletXL} {
     text-align: center;
   }
 `;

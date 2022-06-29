@@ -15,7 +15,7 @@ const Title = styled.p`
   color: ${colors.primaryColor};
   margin-left: 13px;
   font-size: 13x;
-  @media ${device.tablet} {
+  @media ${device.tabletXL} {
     display: none;
   }
 `;
