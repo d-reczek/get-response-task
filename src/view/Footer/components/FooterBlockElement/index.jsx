@@ -1,17 +1,22 @@
 import styled from "styled-components";
-import { colors } from "../../../../common/styles";
 const FooterBlockElementContainer = styled.div`
-  width: 305px;
   /* height: 178px; */
   margin-top: 40px;
   border-right: ${props => props.borderRight};
   padding-left: ${props => props.paddingLeft};
-  padding-right: 40px;
+  padding-right: 80px;
   padding-bottom: 15px;
+  padding-right: ${props => props.paddingRight};
 `;
-const FooterBlockElement = ({ children, borderRight, paddingLeft }) => {
+const FooterBlockElement = ({
+  children,
+  borderRight,
+  paddingLeft,
+  paddingRight,
+}) => {
   return (
     <FooterBlockElementContainer
+      paddingRight={paddingRight}
       paddingLeft={paddingLeft}
       borderRight={borderRight}>
       {children}

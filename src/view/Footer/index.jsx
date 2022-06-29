@@ -25,11 +25,10 @@ const ButtonContainer = styled.div`
   justify-content: center;
   align-items: center;
   gap: 14px;
-  margin-left: -40px;
 `;
 const Footer = () => {
   const footerBlockElementStyles = {
-    borderRight: `1px solid ${colors.primaryColor}`,
+    borderRight: `1px solid ${colors.mainBorderColor}`,
     paddingLeft: "40px",
   };
 
@@ -50,7 +49,8 @@ const Footer = () => {
       </FooterBlockElement>
       <FooterBlockElement
         borderRight={footerBlockElementStyles.borderRight}
-        paddingLeft={footerBlockElementStyles.paddingLeft}>
+        paddingLeft={footerBlockElementStyles.paddingLeft}
+        paddingRight="100px">
         <Heder>
           Bode Trainer in <br />
           your pocket
@@ -76,7 +76,9 @@ const Footer = () => {
           </FooterButton>
         </ButtonContainer>
       </FooterBlockElement>
-      <FooterBlockElement paddingLeft={footerBlockElementStyles.paddingLeft}>
+      <FooterBlockElement
+        paddingRight="10px"
+        paddingLeft={footerBlockElementStyles.paddingLeft}>
         <Heder>Frequently Asked Questions</Heder>
         <Paragraph>
           Lorem ipsum dolor sit amet
