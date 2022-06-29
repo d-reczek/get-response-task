@@ -47,6 +47,12 @@ const DaysBlocksContainer = styled.div`
       width: 52px;
     }
   }
+  @media ${device.mobileS} {
+    width: 30px;
+    :hover {
+      width: 22px;
+    }
+  }
 `;
 const DaysBlockFreeContainer = styled.div`
   width: 128px;
@@ -75,6 +81,12 @@ const DaysBlockFreeContainer = styled.div`
     width: 50px;
     :hover {
       width: 52px;
+    }
+  }
+  @media ${device.mobileS} {
+    width: 30px;
+    :hover {
+      width: 32px;
     }
   }
 `;
