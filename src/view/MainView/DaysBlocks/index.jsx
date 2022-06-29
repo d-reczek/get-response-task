@@ -1,6 +1,4 @@
-import styled from "styled-components";
 import { colors } from "../../../common/styles";
-import DayBlockTitle from "../components/DayBlockTitle";
 import CarbonBlockContent from "./components/CarbonBlockContent";
 import DayBlockContent from "./components/DayBlockContent";
 import WorkoutBlockContent from "./components/WorkoutBlockContent";

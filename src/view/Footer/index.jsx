@@ -37,8 +37,8 @@ const Footer = () => {
       <FooterBlockElement borderRight={footerBlockElementStyles.borderRight}>
         <Heder>Running out of products?</Heder>
         <Paragraph>
-          Lorem ipsum dolor sit amet
-          <br /> consectetur adipisicing elit. Autem, sapiente!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem,
+          sapiente!
         </Paragraph>
         <FooterButton>
           Buy now
@@ -56,8 +56,8 @@ const Footer = () => {
           your pocket
         </Heder>
         <Paragraph>
-          Lorem ipsum dolor sit amet
-          <br /> consectetur adipisicing elit. Autem, sapiente!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem,
+          sapiente!
         </Paragraph>
         <ButtonContainer>
           <FooterButton>
@@ -81,8 +81,8 @@ const Footer = () => {
         paddingLeft={footerBlockElementStyles.paddingLeft}>
         <Heder>Frequently Asked Questions</Heder>
         <Paragraph>
-          Lorem ipsum dolor sit amet
-          <br /> consectetur adipisicing elit. Autem, sapiente!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem,
+          sapiente!
         </Paragraph>
         <FooterButton>
           Read FAQs
