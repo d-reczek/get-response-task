@@ -21,10 +21,11 @@ const PrintBlock = () => {
       <Icon
         sx={{
           fontSize: "23px",
+          filter: "invert(74%) sepia(6%) saturate(27%) hue-rotate(69deg) brightness(99%) contrast(95%)",
           ":hover": { color: colors.secondaryColor },
         }}>
         print
-      </Icon>{" "}
+      </Icon>
       <Title>Print</Title>
     </PrintBlockContainer>
   );
