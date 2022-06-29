@@ -8,6 +8,7 @@ const PrintBlockContainer = styled.div`
   height: 78px;
   background-color: ${colors.thirdColor};
   border-radius: 0 0 ${sizes.primaryBorderRadius} 0;
+  cursor: pointer;
 `;
 const Title = styled.p`
   color: ${colors.primaryColor};
@@ -17,7 +18,14 @@ const Title = styled.p`
 const PrintBlock = () => {
   return (
     <PrintBlockContainer>
-      <Icon sx={{ fontSize: "23px" }}>print</Icon> <Title>Print</Title>
+      <Icon
+        sx={{
+          fontSize: "23px",
+          ":hover": { color: colors.secondaryColor },
+        }}>
+        print
+      </Icon>{" "}
+      <Title>Print</Title>
     </PrintBlockContainer>
   );
 };

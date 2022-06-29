@@ -40,12 +40,48 @@ const DaysBlockFreeContainer = styled.div`
 
 const MainView = () => {
   const { week } = useContext(WeekContex);
-  const monday = ["testa", "test2b", "test3c", "test4d", "test5e"];
-  const tuesday = ["test", "test2", "test3", "test4", "test5"];
-  const wednesday = ["test", "test2", "test3", "test4", "test5"];
-  const thursday = ["test", "test2", "test3", "test4", "test5"];
-  const friday = ["test", "test2", "test3", "test4", "test5"];
-  const saturday = ["test", "test2", "test3", "test4", "test5"];
+  const monday = [
+    "Bode Shake",
+    "Ham and Swiss Roll Ups",
+    "Turkey Melt",
+    "Bode Burn with Mozzarella and Tomato Slices",
+    "Turkey Melt",
+  ];
+  const tuesday = [
+    "Bode Shake",
+    "Ham and Swiss Roll Ups",
+    "Turkey Melt",
+    "Bode Burn with Mozzarella and Tomato Slices",
+    "Turkey Melt",
+  ];
+  const wednesday = [
+    "Bode Shake",
+    "Grilled Steak (HC)",
+    "Bode Shake",
+    "Bode Burn and Whole-Wheat English Muffin with Butter Spray",
+    "Garlic Lime Chicken (HC)",
+  ];
+  const thursday = [
+    "Bode Shake",
+    "Ham and Swiss Roll Ups",
+    "Turkey Melt",
+    "Bode Burn with Mozzarella and Tomato Slices",
+    "Turkey Melt",
+  ];
+  const friday = [
+    "Bode Shake",
+    "Ham and Swiss Roll Ups",
+    "Bode Shake",
+    "Bode Burn with Mozzarella and Tomato Slices",
+    "Turkey Melt",
+  ];
+  const saturday = [
+    "Bode Shake",
+    "Grilled Steak (HC)",
+    "Bode Shake",
+    "Bode Burn and Whole-Wheat English Muffin with Butter Spray",
+    "Garlic Lime Chicken (HC)",
+  ];
   let daysArray = [];
   let freeDay;
   const generateDays = () => {
@@ -55,7 +91,6 @@ const MainView = () => {
       freeDay = daysArray.length;
       daysArray.push(i);
     }
-    console.log("free", daysArray);
   };
 
   generateDays();
@@ -70,24 +105,53 @@ const MainView = () => {
               <DayBlockTitle day={day} />
 
               {day === daysArray[0] &&
-                monday.map(item => <DayBlockContent key={item} title={item} />)}
+                monday.map(item => (
+                  <DayBlockContent
+                    check={true}
+                    background={item === "Bode Shake" ? true : false}
+                    key={monday[item]}
+                    title={item}
+                  />
+                ))}
               {day === daysArray[1] &&
                 tuesday.map(item => (
-                  <DayBlockContent key={item} title={item} />
+                  <DayBlockContent
+                    background={item === "Bode Shake" ? true : false}
+                    key={monday[item]}
+                    title={item}
+                  />
                 ))}
               {day === daysArray[2] &&
                 wednesday.map(item => (
-                  <DayBlockContent key={item} title={item} />
+                  <DayBlockContent
+                    background={item === "Bode Shake" ? true : false}
+                    key={monday[item]}
+                    title={item}
+                  />
                 ))}
               {day === daysArray[3] &&
                 thursday.map(item => (
-                  <DayBlockContent key={item} title={item} />
+                  <DayBlockContent
+                    background={item === "Bode Shake" ? true : false}
+                    key={monday[item]}
+                    title={item}
+                  />
                 ))}
               {day === daysArray[4] &&
-                friday.map(item => <DayBlockContent key={item} title={item} />)}
+                friday.map(item => (
+                  <DayBlockContent
+                    background={item === "Bode Shake" ? true : false}
+                    key={monday[item]}
+                    title={item}
+                  />
+                ))}
               {day === daysArray[5] &&
                 saturday.map(item => (
-                  <DayBlockContent key={item} title={item} />
+                  <DayBlockContent
+                    background={item === "Bode Shake" ? true : false}
+                    key={monday[item]}
+                    title={item}
+                  />
                 ))}
               <CarbonBlockContent />
               <WorkoutBlockContent />

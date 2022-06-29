@@ -31,7 +31,7 @@ const TimeBlocks = () => {
       <SmallBlock time="3:00" timeTag="PM" />
       <LargeBlock
         height={blockStyles.heightSmall}
-        position={blockStyles.bottom}
+        position={blockStyles.top}
         time="6:00"
         timeTag="PM"
       />
