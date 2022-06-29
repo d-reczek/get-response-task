@@ -8,6 +8,7 @@ const DaysBlocksContainer = styled.div`
   width: 128px;
   border-right: 2px solid ${colors.mainBorderColor};
   :hover {
+    width: 130px;
     border: 2px solid ${colors.secondaryColor};
     margin-top: -2px;
     margin-left: -2px;

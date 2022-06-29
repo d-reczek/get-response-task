@@ -5,7 +5,10 @@ import DayBlockFreeContent from "./components/DayBlockFreeContent";
 import PrintBlock from "./components/PrintBlock";
 const DaysBlockFreeContainer = styled.div`
   width: 128px;
+  border-right: 2px solid ${colors.footerBackground};
+
   :hover {
+    width: 130px;
     border: 2px solid ${colors.secondaryColor};
     margin-top: -2px;
     margin-left: -2px;
