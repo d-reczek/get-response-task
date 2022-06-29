@@ -5,16 +5,19 @@ import NavBar from "./view/NavBar";
 import Header from "./view/Header";
 import MainView from "./view/MainView";
 import Footer from "./view/Footer";
+import WeekContexProvider from "./components/WeekContext";
 function App() {
   return (
-    <div className="App">
-      <NavBar />
-      <PageWrapper>
-        <Header />
-        <MainView />
-        <Footer />
-      </PageWrapper>
-    </div>
+    <WeekContexProvider>
+      <div className="App">
+        <NavBar />
+        <PageWrapper>
+          <Header />
+          <MainView />
+          <Footer />
+        </PageWrapper>
+      </div>
+    </WeekContexProvider>
   );
 }
 

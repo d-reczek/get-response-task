@@ -10,6 +10,8 @@ import StepConnector, {
 } from "@mui/material/StepConnector";
 import "./MuiStepLabel-label.css";
 import { colors } from "../../../../../common/styles";
+import { useContext } from "react";
+import { WeekContex } from "../../../../../components/WeekContext";
 
 const ColorlibConnector = styled(StepConnector)(() => ({
   [`&.${stepConnectorClasses.alternativeLabel}`]: {
@@ -84,11 +86,12 @@ ColorlibStepIcon.propTypes = {
 // const steps = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"];
 
 const ProgressLine = ({ weeks }) => {
+  const { week } = useContext(WeekContex);
   return (
     <Stack sx={{ width: "230px", margin: "14px 0" }} spacing={4}>
       <Stepper
         alternativeLabel
-        activeStep={4}
+        activeStep={week - 1}
         connector={<ColorlibConnector />}>
         {weeks.map(label => (
           <Step sx={{ padding: "0px" }} key={label}>

@@ -8,16 +8,16 @@ const ProgressBarContainer = styled.div`
 
 const ProgressTitle = styled.p`
   color: ${colors.primaryColor};
-  font-size:${sizes.smallFontSize};
+  font-size: ${sizes.smallFontSize};
   text-transform: uppercase;
   margin-left: 5px;
 `;
 
-const ProgresBar = ({ weeks }) => {
+const ProgresBar = ({ weeks,  }) => {
   return (
     <ProgressBarContainer>
       <ProgressTitle>Your 12 weeks progress</ProgressTitle>
-      <ProgressLine weeks={weeks} />
+      <ProgressLine  weeks={weeks} />
     </ProgressBarContainer>
   );
 };

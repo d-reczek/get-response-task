@@ -9,7 +9,8 @@ const HeaderContainer = styled.header`
   display: flex;
   justify-content: space-between;
 `;
-const weeks = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"];
+const weeks = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+
 const Header = () => {
   return (
     <HeaderContainer>

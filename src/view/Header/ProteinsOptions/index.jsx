@@ -40,7 +40,7 @@ const ProteinsOptions = () => {
       <ProteinsOptionsTitle>Select your protein options</ProteinsOptionsTitle>
       <ImagesContainer>
         {images.map(img => (
-          <Image alt="food images" src={img} />
+          <Image key={img} alt="food images" src={img} />
         ))}
       </ImagesContainer>
     </ProteinsOptionsContainer>
