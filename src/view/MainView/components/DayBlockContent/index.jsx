@@ -1,5 +1,6 @@
 import { Icon } from "@mui/material";
 import styled from "styled-components";
+import { device } from "../../../../common/deviceBreakPoints";
 import { colors, sizes } from "../../../../common/styles";
 import shakeImg from "./img/shake.png";
 
@@ -15,6 +16,8 @@ const DayBlockContentContainer = styled.div`
   background-repeat: no-repeat;
   background-position: bottom;
   font-weight: ${props => props.hover};
+  @media ${device.tablet} {
+  }
 
   /* border-right: ${props => props.border}; */
 `;
@@ -22,9 +25,12 @@ const DayBlockContentContainer = styled.div`
 const Title = styled.p`
   color: ${colors.primaryColor};
   font-size: ${sizes.smallFontSize};
-  margin: 14px 5px 0 14px;
+ 
+  @media ${device.tablet} {
+    margin: 5px;
+    font-size: 8px;
+  }
 `;
-
 const DayBlockContent = ({ background, title, check }) => {
   return (
     <DayBlockContentContainer background={background}>

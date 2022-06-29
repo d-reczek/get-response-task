@@ -1,5 +1,6 @@
 import { Icon } from "@mui/material";
 import styled from "styled-components";
+import { device } from "../../common/deviceBreakPoints";
 import { colors, sizes } from "../../common/styles";
 import FooterBlockElement from "./components/FooterBlockElement";
 import FooterButton from "./components/FooterButton";
@@ -7,17 +8,28 @@ const FooterContainer = styled.footer`
   display: flex;
   background-color: ${colors.footerBackground};
   margin-bottom: 4px;
+  @media ${device.tablet} {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 const Heder = styled.h3`
   color: ${colors.primaryColor};
   font-size: ${sizes.largeFontSize};
   font-weight: bold;
   padding-bottom: 20px;
+  @media ${device.tablet} {
+    padding: 0;
+  }
 `;
 const Paragraph = styled.p`
   color: ${colors.primaryColor};
   font-size: ${sizes.smallFontSize};
   padding-bottom: 20px;
+  @media ${device.tablet} {
+    padding: 0;
+  }
 `;
 
 const ButtonContainer = styled.div`

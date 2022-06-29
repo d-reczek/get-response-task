@@ -1,5 +1,6 @@
 import { Icon } from "@mui/material";
 import styled from "styled-components";
+import { device } from "../../../../../common/deviceBreakPoints";
 import { colors, sizes } from "../../../../../common/styles";
 const PrintBlockContainer = styled.div`
   display: flex;
@@ -14,6 +15,9 @@ const Title = styled.p`
   color: ${colors.primaryColor};
   margin-left: 13px;
   font-size: 13x;
+  @media ${device.tablet} {
+    display: none;
+  }
 `;
 const PrintBlock = () => {
   return (
@@ -21,7 +25,8 @@ const PrintBlock = () => {
       <Icon
         sx={{
           fontSize: "23px",
-          filter: "invert(74%) sepia(6%) saturate(27%) hue-rotate(69deg) brightness(99%) contrast(95%)",
+          filter:
+            "invert(74%) sepia(6%) saturate(27%) hue-rotate(69deg) brightness(99%) contrast(95%)",
           ":hover": { color: colors.secondaryColor },
         }}>
         print
